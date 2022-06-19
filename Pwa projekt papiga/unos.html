@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Ivan Papiga">
+        <meta name="description" content="Stranica za scifi djeljenje novosti i filmove">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="icon" type="image/png" href="images/favicon-32x32.png">
+        <script src="https://kit.fontawesome.com/89f71c403d.js" crossorigin="anonymous"></script>
+        <title>Sci-fi Zone</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <section class="logo">
+                    <h1>Sci-fi Zone</h1>
+                </section>
+                <section>
+                    <nav>
+                        <ul>
+                            <li><a href="home.html">Početna</a></li>
+                            <li><a href="home.html#preporuke">Preporuke</a></li>
+                            <li><a href="home.htmll#recenzije">Recenzije</a></li>
+                            <li><a href="home.html#fandom">Fandom</a></li>
+                            <li><a href="#">Novi članak</a></li>
+                        </ul>
+                    </nav>
+                </section>
+            </header>
+            
+            <main>
+                <h2>NOVI ČLANAK</h2>
+                <hr>
+                <section class="wrapper">
+                    <div class="form_container">
+                        <form action="additional/skripta.php" method="post" name="novi_clanak">
+                            <label for="naslov_clanak">Naslov:<br></label>
+                            <input type="text" name="naslov_clanak" id="naslov_clanak" placeholder="Naslov">
+                            
+                            <label for="sazetak"><br>Sažetak:<br></label>
+                            <textarea name="sazetak" id="sazetak" placeholder="Sažetak" rows="3"></textarea>
+
+                            <label for="sadrzaj"><br>Sadržaj:<br></label>
+                            <textarea name="sadrzaj" id="sadrzaj" placeholder="Sadržaj" rows="12"></textarea>
+
+                            <label for="kategorija"><br>Kategorija<br></label>
+                            <select name="kategorija" id="kategorija">
+                                <option value="" disabled selected>Odaberite:</option>
+                                <option value="preporuke">Preporuke</option>
+                                <option value="recenzije">Recenzije</option>
+                                <option value="fandom">Fandom</option>
+                            </select>
+
+                            <label for="fotografija"><br>Fotografija:<br></label>
+                            <input type="file" name="fotografija" id="fotografija" accept="image/jpg,image/png,image/gif">
+
+                            <label for="spremi"><br>Pojavljivanje na stranici:<br></label>
+                            <input name="spremi" id="spremi" type="checkbox" class="reset_checkbox">
+
+                            <br>
+                            <input type="submit" name="submit" id="submit" value="Objavi">
+                        </form>
+                    </div>
+                </section>
+            </main>
+
+            <footer>
+                <p>Ivan Papiga<br>
+                    Kontakt: ipapiga@tvz.hr<br>
+                    Izrađeno: 2022. godine</p>
+            </footer>
+        </div>
+    </body>
+</html>
